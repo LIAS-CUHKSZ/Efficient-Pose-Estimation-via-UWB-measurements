@@ -11,7 +11,7 @@ This repository contains a dataset for studying the planar pose estimation via U
 Compared to previous datasets, this dataset is tailored for the so-called **Rigid Body Localization(RBL)** problem, where multiple tags are deployed on a rigid body so that both rotation and position are coupled in range measurements. The least requirement for the planar case is two tags which are not colinear with the origin of local refernce frame and three anchors which are not colinear. In this dataset, we deploy three tags and eight anchors.
 
 In addition, in our paper you will find:
-- Review of previous works on planar **(RBL)** problem.
+- Review of previous works on planar **RBL** problem.
 - Design of the **GN-ULS** estimator, which provably achieve the Cramer-Rao lower bound.
 - Simulation results and dicussions.
 - Experiment results and discussions.
