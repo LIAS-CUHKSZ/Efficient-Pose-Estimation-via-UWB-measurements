@@ -1,73 +1,43 @@
-# 数据说明
+# UWB Pose Estimation Datasets
+**Efficient Planar Pose Estimation via UWB Measurements**. Haodong JIANG, Yuan SHEN, Wentao WANG, Xinghan LI, and Junfeng WU. The paper is available in [arXiv](https://www.baidu.com/). If you find the code or data in this repository useful in your research, please cite our paper:
 
-## 2D
+ ```
+ @article{
+ }
+ ```
 
-### 1. 数据格式
+## Introduction
+This repository contains a dataset for studying the planar pose estimation via UWB range measurements. We also include the MATLAB code for simulations and experiments, where we compare our **GN-ULS** estimator with earlier studies. 
 
-其中csv为原始数据未作修改，xlsx为另存数据
+Compared to previous datasets, this dataset is tailored for the so-called **Rigid Body Localization(RBL)** problem, where multiple tags are deployed on a rigid body so that both rotation and position are coupled in range measurements, as shown in the following figure. The least requirement for the planar case is two tags which are not co-linear with the origin of local reference frame and three anchors which are not co-linear. In this dataset, we deploy three tags and eight anchors.
+<img src="Images\Planar RBL.jpg" alt="Planar Pose Estimation via Range Measurements" style="zoom:10%;" />
 
-#### 1.1 UWB数据
+In addition, in our paper you will find:
+- Review of previous works on planar **RBL** problem.
+- Design of the **GN-ULS** estimator, which provably achieve the Cramer-Rao lower bound.
+- Simulation results and discussions.
+- Experiment results and discussions.
 
-​	**第1列**是序号
+## Repository structure
 
-​	**第2列**是时间
+The repository is divided into following parts: simulations, planar dataset, experiments. The 3D dataset is to be updated.
 
-​	**第3-26列**是8个anchor到3个sensor到的距离数据，共24列，是按照==anchor×sensor==来排列的，即第3-5列数据是anchor0到3个sensor的数据，第6-8列数据是anchor1到3个sensor的数据，以此类推
+### Simulations
 
-#### 1.2 动捕数据
+Contains MATLAB Codes for simulations.
 
-​	**第1列**是时间
+### Planar Dataset
 
-​	**第2-4列**是世界坐标系下（即动捕坐标系）**刚体质心**的位置坐标(x,y,z)
+Contains static and dynamic UWB datasets tailored for the planar **RBL** problem.
 
-​	**第5-7列**是四元数（第一位为实部），表示动捕坐标系-->刚体坐标系的旋转, 转化成欧拉角顺序为：==’Y, X, Z'==,对应==[yaw, pitch, roll]==
+### Experiments
 
-### 2. 实验
+Contains MATLAB Codes realizing
 
-#### 2.1 UWB Calibration
+1. alignment between motion capture and UWB measurements 
+2. outlier rejection/ interpolation
+3. preprocessed dataset
+4. bias calibration 
+5. static pose estimation
+6. dynamic pose estimation
 
-分别标定了3个sensor到8个anchor的误差，其中动捕给出的位置坐标就是sensor的世界坐标，即这里把质心分别移到了3个sensor上
-
-#### 2.2 Static
-
-8.14测了5个pose, 每个pose分别测了6个不同的yaw,共测了30组数据
-
-8.20测了2个pose, 每个pose分别测了6个不同的yaw,共测了12组数据
-
-#### 2.3 Dynamic
-
-采用3个不同的速度测了3组数据
-
-## 3D
-
-共测了3组cali
-
-### 1.数据格式
-
-#### 1.1 UWB数据
-
-​	**第1列**是时间
-
-​	**第2-17列**是是4个sensor到4个anchor的距离数据，sensor共16列，是按照==sensor×anchor==来排列的，即第2-5列数据是sensor0到4个anchor的数据，第6-9列数据是sensor1到4个anchor的数据，以此类推
-
-#### 1.2 动捕数据
-
-​	**第1列**是时间
-
-​	**第2-4列**是世界坐标系下（即动捕坐标系）**刚体质心**的位置坐标(x,y,z)
-
-​	**第5-7列**是四元数（第一位为实部），表示动捕坐标系-->刚体坐标系的旋转
-
-#### 1.3 IMU数据
-
-​	**第1列**是时间
-
-​	**第2-4列**是欧拉角，旋转顺序：==‘Z, Y, X'==，三列分别对应==[roll(X),pitch(Y),yaw(Z)]==
-
-​	**第5-7列**是陀螺仪原始角速度[x,y,z]
-
-​	**第8-10列**是陀螺仪滤波后角速度[x,y,z]
-
-​	**第11-13列**是加速度计原始加速度[x,y,z]
-
-​	**第14-16列**是加速度计滤波加速度[x,y,z]
