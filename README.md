@@ -34,8 +34,8 @@ Contains static and dynamic UWB datasets tailored for the planar **RBL** problem
 
 Contains MATLAB Codes realizing
 
-1. alignment between motion capture and UWB measurements 
-2. outlier rejection/ interpolation
+1. outlier rejection and interpolation
+2. alignment between motion capture and UWB measurements 
 3. preprocessed dataset
 4. bias calibration 
 5. static pose estimation
