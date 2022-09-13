@@ -1,4 +1,31 @@
-# 数据说明
+# UWB Pose Estimation Datasets
+**Efficient Planar Pose Estimation via UWB Measurements**. Haodong JIANG, Yuan SHEN, Wentao WANG, Xinghan LI, and Junfeng WU. The paper is available in [arXiv](https://www.baidu.com/). If you find the code or data in this repository useful in your research, please cite our paper:
+ ```
+ @inproceedings{
+ }
+ ```
+
+## Introduction
+This repository contains a dataset for studying the planar pose estimation via UWB range measurements. We also include the matlab code for simulations and experimenets, where we compare our **GN-ULS** estimator with earlier stuides. 
+
+Compared to previous datasets, this dataset is tailored for the so-called **Rigid Body Localization(RBL)** problem, where multiple tags are deployed on a rigid body so that both rotation and position are coupled in range measurements. The least requirement for the planar case is two tags which are not colinear with the origin of local refernce frame and three anchors which are not colinear. In this dataset, we deploy three tags and eight anchors.
+
+In addition, in our paper you will find:
+- Review of previous works on planar **(RBL)** problem.
+- Design of the **GN-ULS** estimator, which provably achieve the Cramer-Rao lower bound.
+- Simulation results and dicussions.
+- Experiment results and discussions.
+
+## Repository structure
+
+The repository is divided into following parts: Matlab code for simulations, raw planar dataset, Matlab code for experiements. 
+
+### Matlab Code for Simulations
+
+### Raw Planar Dataset
+
+### Matlab Code for Experiments
+
 
 ## 2D
 
