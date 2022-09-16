@@ -115,5 +115,5 @@ We place the trolley at different sites and change the orientation from $0^{\cir
 
 There are 25 columns of UWB data. The first column is time,  columns 2-25 are the UWB range measurements, and  its correspondence between anchor and tag is as follows.
 
-| time | a0-t0 | a0-t1 | a0-t2 | a1-t0 | a1-t1 | a1-t2 | a2-t0 | a2-t1 | a2-t2 | a3-t0 | a3-t1 | a3-t2 |
-| :--: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| time | a0-t0 | a0-t1 | a0-t2 | a1-t0 | a1-t1 | a1-t2 | a2-t0 | a2-t1 | a2-t2 | a3-t0 | a3-t1 | a3-t2 | a4-t0 | a4-t1 | a4-t2 | a5-t0 | a5-t1 | a5-t2 | a6-t0 | a6-t1 | a6-t2 | a7-t0 | a7-t1 |
+| :--: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
