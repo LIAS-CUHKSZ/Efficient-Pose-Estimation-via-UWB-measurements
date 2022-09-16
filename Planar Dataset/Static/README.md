@@ -1,8 +1,9 @@
 # Static Dataset
 
-We place the trolley at different sites and change the orientation from $0^{\circ}$ to $300^{\circ}$ at an interval of approximately $60^{\circ}$. We conduct the experiment indoors with an overall volume of roughly 10m x 6m x 4m.
+We place the trolley at different sites and change the orientation from $0^{\circ}$ to $300^{\circ}$ at an interval of approximately $60^{\circ}$. 
 
 ### 2022/8/14
+We conduct the experiment indoors with an overall volume of roughly 10m x 6m x 4m.
 
 #### Settings
 
@@ -67,7 +68,7 @@ We place the trolley at different sites and change the orientation from $0^{\cir
 |        | 299.428 | -0.01342               | 0.01189             |
 
 ### 2022/8/20
-
+We conduct the experiment indoors with an overall volume of roughly 6m x 6m x 4m.
 #### Settings
 
 ##### Coordinates of UWB tags in the local reference frame
