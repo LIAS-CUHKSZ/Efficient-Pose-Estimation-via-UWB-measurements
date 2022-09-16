@@ -1,7 +1,7 @@
 # UWB Pose Estimation Datasets
 **Efficient Planar Pose Estimation via UWB Measurements**. Haodong JIANG, Yuan SHEN, Wentao WANG, Xinghan LI, and Junfeng WU. The paper is available in [arXiv](https://arxiv.org/abs/2209.06779). If you find the code or data in this repository useful in your research, please cite our paper:
 
- ```
+ ```latex
 @misc{jiang2022efficient,
       title={Efficient Planar Pose Estimation via UWB Measurements}, 
       author={Haodong Jiang and Wentao Wang and Yuan Shen and Xinghan Li and Xiaoqiang Ren and Biqiang Mu and Junfeng Wu},

@@ -1,8 +1,8 @@
 # Static Dataset
 
-### 2022/8/14
-
 We place the trolley at different sites and change the orientation from $0^{\circ}$ to $300^{\circ}$ at an interval of approximately $60^{\circ}$. We conduct the experiment indoors with an overall volume of roughly 10m x 6m x 4m.
+
+### 2022/8/14
 
 #### Settings
 
@@ -68,8 +68,6 @@ We place the trolley at different sites and change the orientation from $0^{\cir
 
 ### 2022/8/20
 
-We place the trolley at different sites and change the orientation from $0^{\circ}$ to $300^{\circ}$ at an interval of approximately $60^{\circ}$. We conduct the experiment indoors with an overall volume of roughly 10m x 6m x 4m.
-
 #### Settings
 
 ##### Coordinates of UWB tags in the local reference frame
@@ -110,3 +108,12 @@ We place the trolley at different sites and change the orientation from $0^{\cir
 |        | 180.491 | -0.11221               | 1.027228            |
 |        | 239.91  | -0.25763               | 1.023581            |
 |        | 300.254 | -0.36585               | 0.933745            |
+
+### Data format
+
+#### UWB data
+
+There are 25 columns of UWB data. The first column is time,  columns 2-25 are the UWB range measurements, and  its correspondence between anchor and tag is as follows.
+
+| time | a0-t0 | a0-t1 | a0-t2 | a1-t0 | a1-t1 | a1-t2 | a2-t0 | a2-t1 | a2-t2 | a3-t0 | a3-t1 | a3-t2 |
+| :--: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
