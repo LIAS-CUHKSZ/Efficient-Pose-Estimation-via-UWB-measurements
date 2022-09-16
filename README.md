@@ -4,7 +4,7 @@
  ```
 @misc{jiang2022efficient,
       title={Efficient Planar Pose Estimation via UWB Measurements}, 
-      author={Haodong Jiang and Wentao Wang and Yuan Shen and Xinghan Li and Xiaoqiang Ren and Junfeng Wu},
+      author={Haodong Jiang and Wentao Wang and Yuan Shen and Xinghan Li and Xiaoqiang Ren and Biqiang Mu and Junfeng Wu},
       year={2022},
       eprint={2209.06779},
       archivePrefix={arXiv},
