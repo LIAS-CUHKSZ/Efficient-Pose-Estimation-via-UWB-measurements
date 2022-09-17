@@ -32,7 +32,7 @@ The repository is divided into following parts: simulations, planar dataset, exp
 
 Contains MATLAB Codes for simulations.
 
-### Planar Dataset
+### Planar_Dataset
 
 Contains static and dynamic UWB datasets tailored for the planar **RBL** problem.
 
