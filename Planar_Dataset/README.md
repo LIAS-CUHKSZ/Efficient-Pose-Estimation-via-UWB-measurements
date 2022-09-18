@@ -1,5 +1,5 @@
 # Planar Dataset
-<img src="Images\experiment.jpg" alt="System Overview" style="zoom:10%;" />
+<img src="..\Images\experiment.jpg" alt="System Overview" style="zoom:10%;" />
 ### Static Dataset
 
 We place the trolley at different sites and change the orientation from $0^{\circ}$ to $300^{\circ}$ at an interval of approximately $60^{\circ}$. In total, we collect 42 static datasets, each lasting for around 100 seconds.
