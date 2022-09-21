@@ -29,10 +29,10 @@ for i=1:N
     J((i-1)*Mt+1:i*Mt,1)=J((i-1)*Mt+1:i*Mt,2:3)*L_i*Psi_Kron_I2_R_e';
 end
 
-%P'=J'/diag(Sigma)
+%P'=J'/diag(Sigma.^2)
 P=zeros(Mt*N,3);
 for j=1:3
-    P(:,j)=J(:,j)./Sigma';
+    P(:,j)=J(:,j)./(Sigma.^2)';
 end
 estimator=[0;t0]+(P'*J)\P'*y;
 te=estimator(2:3);
