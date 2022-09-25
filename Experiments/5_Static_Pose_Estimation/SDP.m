@@ -13,19 +13,18 @@ function [R_hat,t_hat] = SDP(A,S,d1,Rn)
 gamma = [1,0,0,1;0,1,-1,0]';
 H1=zeros(Mt*N,7);
 for i=1:N
-    for m=1:Mt
-        H1(m+(i-1)*Mt,:)=[-2*kron(S(:,i)',A(:,m)')*gamma,-2*A(:,m)',2*S(:,i)',1];
-    end
+    H1((i-1)*Mt+1:i*Mt,:)=[-2*kron(S(:,i)',A')*gamma,-2*A',2*repmat(S(:,i)',Mt,1),ones(Mt,1)];
+%     for m=1:Mt
+%         H1(m+(i-1)*Mt,:)=[-2*kron(S(:,i)',A(:,m)')*gamma,-2*A(:,m)',2*S(:,i)',1];
+%     end
 end
 %P' = H1'*diag(1./Rn)
-P=zeros(Mt*N,7);
-for j=1:7
-    P(:,j) = H1(:,j)./Rn;
-end
+P=H1'./repmat(Rn',7,1);
+
 cvx_begin quiet
     variable F1(7,7) symmetric
     variable f1(7)       
-    minimize( trace(P'*H1*F1)-2*trace(d1'./Rn'*H1*f1)+trace(d1'./Rn'*d1))
+    minimize( trace(P*H1*F1)-2*trace(d1'./Rn'*H1*f1)+trace(d1'./Rn'*d1))
     subject to
         trace(F1(1:2,1:2)) == 1
         f1(5) == F1(1,3)+F1(2,4)
