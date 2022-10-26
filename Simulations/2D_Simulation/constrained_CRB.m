@@ -1,3 +1,8 @@
+% Copyright <2022> <Haodong Jiang, Wentao Wang, Yuan Shen, Xinghan Li, Xiaoqiang Ren, Biqiang Mu, Junfeng Wu>
+% Haodong Jiang, SLAMLab-CUHKSZ, September 2022
+% haodongjiang@link.cuhk.edu.cn, https://github.com/SLAMLab-CUHKSZ 
+% paper link: https://arxiv.org/abs/2209.06779
+
 function CR = constrained_CRB(F,R)
 %compute the constrained cramer rao lower bound
 U=zeros(6,3);

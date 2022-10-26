@@ -1,3 +1,8 @@
+% Copyright <2022> <Haodong Jiang, Wentao Wang, Yuan Shen, Xinghan Li, Xiaoqiang Ren, Biqiang Mu, Junfeng Wu>
+% Haodong Jiang, SLAMLab-CUHKSZ, September 2022
+% haodongjiang@link.cuhk.edu.cn, https://github.com/SLAMLab-CUHKSZ 
+% paper link: https://arxiv.org/abs/2209.06779
+
 function [y,t,time]=GTRS(E1,E2,Rn,D,Mt,N)
 %Input
 %E1(Mt*N,2)                 :

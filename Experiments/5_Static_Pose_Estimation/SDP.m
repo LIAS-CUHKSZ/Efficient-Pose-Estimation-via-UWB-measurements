@@ -1,3 +1,8 @@
+% Copyright <2022> <Haodong Jiang, Wentao Wang, Yuan Shen, Xinghan Li, Xiaoqiang Ren, Biqiang Mu, Junfeng Wu>
+% Haodong Jiang, SLAMLab-CUHKSZ, September 2022
+% haodongjiang@link.cuhk.edu.cn, https://github.com/SLAMLab-CUHKSZ 
+% paper link: https://arxiv.org/abs/2209.06779
+
 function [R_hat,t_hat] = SDP(A,S,d1,Rn)
 %Input
 %A(2,Mt)        : Anchors' position
