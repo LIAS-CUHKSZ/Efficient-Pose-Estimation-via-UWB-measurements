@@ -36,14 +36,13 @@ Contains MATLAB Codes for simulations.
 
 Contains static and dynamic UWB datasets tailored for the planar **RBL** problem.
 
-### Experiments
+### Static_Experiment & Dynamic_Experiment
 
 Contains MATLAB Codes realizing
 
-1. outlier rejection and interpolation
-2. alignment between motion capture and UWB measurements 
-3. preprocessed dataset
-4. bias calibration 
-5. static pose estimation
-6. dynamic pose estimation
+1. calibration
+2. outlier rejection and interpolation
+3. alignment between motion capture and UWB measurements 
+4. static pose estimation
+5. dynamic pose estimation
 
