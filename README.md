@@ -15,8 +15,8 @@
 ## Introduction
 This repository contains a dataset for studying the planar pose estimation via UWB range measurements. We also include the MATLAB code for simulations and experiments, where we compare our **GN-ULS** estimator with earlier studies. 
 
-Compared to previous datasets, this dataset is tailored for the so-called **Rigid Body Localization(RBL)** problem, where multiple tags are deployed on a rigid body so that both rotation and position are coupled in range measurements, as shown in the following figure. The least requirement for the planar case is two tags which are not co-linear with the origin of local reference frame and three anchors which are not co-linear. In this dataset, we deploy three tags and eight anchors.
-<img src="Images\Planar RBL.jpg" alt="Planar Pose Estimation via Range Measurements" style="zoom:10%;" />
+Compared to previous datasets, this dataset is tailored for the so-called **Rigid Body Localization(RBL)** problem, where multiple tags are deployed on a rigid body so that both rotation and position are coupled in range measurements, as shown in the following figure. The least requirement for the planar case is two tags and three anchors which are not co-linear. In this dataset, we deploy three tags and eight anchors.
+<img src="Images\cover.png" alt="Planar Pose Estimation via Range Measurements" style="zoom:10%;" />
 
 In addition, in our paper you will find:
 - Review of previous works on planar **RBL** problem.
